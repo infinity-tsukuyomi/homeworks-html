@@ -1,0 +1,31 @@
+/*Added media*/
+
+@media screen and (max-width: 600px) {
+    h1 {
+        color: cornflowerblue;
+        border: 5px dotted black;
+    }
+
+    .hello,
+    .name,
+    .about__me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px){
+    h1 {
+        color: green;
+        border: 5px solid yellow;
+    }
+
+    .hello,
+    .name,
+    .about__me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
