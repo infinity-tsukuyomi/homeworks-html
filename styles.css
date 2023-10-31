@@ -1,0 +1,759 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+body {
+    max-width: 1440px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 16.5px;
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+
+    margin-left: 112px;
+    padding-top: 16px;
+}
+
+.headerLogo_image {
+    width: 38px;
+    height: 47.5px;
+
+    margin-right: 14px;
+}
+
+.the {
+    font-style: italic;
+}
+
+.headerLogo_text {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+
+    color: #2947A9;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-right: 112px;
+    padding-top: 30px;
+}
+
+.navbarList_items {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;    
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbarList_items > a {
+    color: #14171F;
+}
+
+.navbarList_items:not(:last-child) {
+    margin-right: 50px;
+}
+
+.buildings {
+    height: 646px;
+    background: url(images/buildings.jpg) no-repeat center/cover;
+
+    position: relative;
+    
+}
+
+h1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 72px;
+
+    color: #292E3D;
+    height: 168px;
+    width: 556px;
+    position: absolute;
+    bottom: 239px;
+    left: 112px;
+}
+
+.buildings_table {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.buildings_button1 {
+    width: 207px;
+    height: 40px;
+    border: 0;
+
+    position: absolute;
+    bottom: 0;
+    right: 208px;
+    z-index: 2;
+}
+
+.buildings_button2 {
+    width: 207px;
+    height: 40px;
+    border: 0;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.our_reputation {
+    height: 433px;  
+
+}
+
+.ourReputation_header {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 60px;
+}
+
+.ourReputation_text {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+
+    color: #292E3D;
+}
+
+.ourReputation_blocks {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.ourReputation_block1,
+.ourReputation_block2,
+.ourReputation_block3 {
+    border: 1.4px solid #E0E3EB;
+    width: 292px;
+    height: 197px;
+}
+
+.micro {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+h4 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+
+    color: #3D445C;
+    padding-top: 18px;
+    padding-left: 20px;
+}
+
+.ourReputationBlock_text {  
+    width: 254px;
+    height: 38px;
+
+    font-family:  "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #858EAD;
+    margin-top: 18px;
+    margin-left: 20px;
+}
+
+#about_us {
+    height: 945px;
+    position: relative;
+}
+
+.aboutUs_block {
+    width: 488px;
+    height: 523px;
+    background-color: #2947A9;
+
+    position: absolute;
+    top: 147px;
+    right: 112px;
+}
+
+.about_us {
+    font-family:  "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+
+    color: white;   
+    padding-top: 50px;
+    padding-left: 40px;   
+}
+
+.about_img {
+    width: 902px;
+    height: 669px;
+    margin-top: 74px;
+    margin-left: 114px;
+}
+
+.aboutUsBlock_text {
+    width: 388px;
+    height: 207px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
+    color: white;
+    padding-top: 37px;
+    padding-left: 40px;
+}
+
+.aboutUsBlock_button {
+    margin-top: 120px;
+    margin-left: 40px;
+}
+
+#services {
+    height: 608px;
+    background: #F6F8F7;
+}
+
+.services_header {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+
+    color: #292E3D;
+    padding-top: 44px;
+}
+
+.services_blocks {
+    height: 410px;
+    margin-left: 216px;
+    margin-top: 30px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 271px 271px 270px;
+    grid-template-rows: 181px 181px;
+    grid-column-gap: 98px;
+    grid-row-gap: 48px;
+}
+
+.experience {
+    height: 723px;
+    display: grid;
+    grid-template-columns: 66% 34%;
+}
+
+.experience_blocks {
+    position: relative;
+}
+
+.eightyFour,
+.oneHundredTwentyThree,
+.thirtySeven,
+.thirty {
+    font-family: "Work Sans", sans-serif;
+    font-size: 72px;
+    font-weight: 600;
+
+    color: #292E3D;
+}
+
+.experienceBlock_header {
+    position: relative;
+}
+
+.experienceBlock_item1 {
+    width: 280px;
+    height: 155px;
+    position: absolute;
+    top: 122px;
+    left: 512px;
+    z-index: 1;
+
+    border: 1px solid white;
+    box-shadow: 0 4px 6px -2px rgba(17, 24, 39, 0.05),
+    0 12px 16px -4px rgba(17, 24, 39, 0.1);
+}
+
+.hands {
+    position: absolute;
+    bottom: 77px;
+    left: 211px;
+}
+
+.experienceBlock_item2 {
+    width: 361px;
+    height: 155px;
+    position: absolute;
+    top: 221px;
+    left: 212px;
+
+    border: 1px solid white;
+    box-shadow: 0 4px 6px -2px rgba(17, 24, 39, 0.05),
+    0 12px 16px -4px rgba(17, 24, 39, 0.1);
+}
+
+.pen {
+    position: absolute;
+    bottom: 125px;
+    right: 315px;
+}
+
+.experienceBlock_item3 {
+    width: 276px;
+    height: 155px;
+    position: absolute;
+    top: 364px;
+    left: 458px;
+    z-index: 1;
+
+    border: 1px solid white;
+    box-shadow: 0 4px 6px -2px rgba(17, 24, 39, 0.05),
+    0 12px 16px -4px rgba(17, 24, 39, 0.1);
+}
+
+.cup {
+    position: absolute;
+    bottom: 77px;
+    left: 204px;
+}
+
+.experienceBlock_item4 {
+    width: 333px;
+    height: 155px;
+    position: absolute;
+    top: 469px;
+    left: 261px;
+
+    border: 1px solid white;
+    box-shadow: 0 4px 6px -2px rgba(17, 24, 39, 0.05),
+    0 12px 16px -4px rgba(17, 24, 39, 0.1);
+}
+
+.pencil {
+    position: absolute;
+    top: 113px;
+    left: 288px;
+}
+
+.experience_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.experience_years {
+    width: 359px;
+    height: 140px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+
+    color: #2947A9;
+}
+
+.experienceHeader_text {
+    width: 330px;
+    height: 74px;
+
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    color: #525B7A;
+    margin-top: 40px;
+}
+
+.experience_button {
+    margin-top: 67px;
+}
+
+.consultation {
+    height: 300px;
+    background: url(images/unsplash_MP0bgaS_d1c.png) no-repeat center/cover;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.consultation_block2 {
+    display: flex;
+    align-items: center;
+}
+
+.consultation_header {
+    font-family: "Work Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+
+    color: #ffffff;
+    margin-top: 100px;  
+}
+
+.consultation_text {
+    font-family: "Work Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+
+    color: #ffffff; 
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.consultation_button {
+    width: 232px;
+    height: 53px;
+}
+
+.projects_content {
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.projects_header {
+    width: 148px;
+    height: 42px;
+    margin-top: 88px;
+    margin-left: 112px;
+}
+
+.projectsHeader_title {
+    font-family: "Work Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+
+    color: #292E3D;
+}
+
+.projects_text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 112px;
+}
+
+.projects_text a:first-child {
+    font-family: "Work Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    
+    border-left: 4px solid #2947A9;
+    color: #2947A9;
+    padding-left: 16px;
+}
+
+.projects_text a:not(:first-child) {
+    font-family: "Work Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+
+    color: #C2C7D6;
+    padding-top: 20px;
+}
+
+.projects_blocks {
+    margin-top: 170px;
+}
+
+.projects_images {
+    display: grid;
+    grid-template-columns: 384px 384px;
+    grid-template-rows: 331px 331px;
+    column-gap: 32px;
+    row-gap: 32px;
+}
+
+.PageControl {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PageControl > input {
+    width: 295px;
+    height: 64px;
+}
+
+.PageControl > img {
+    width: 144px;
+    height: 16px;
+}
+
+.help {
+    height: 632px;
+    background-color: #F6F8F7;
+    margin-top: 138px;
+}
+
+.helpWrap_title {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.help_title {
+    font-family: "Work Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+
+    color: #292E3D;
+    margin-top: 60px;
+}
+
+.helpWrap_text {
+    display: flex;
+    justify-content: center;
+}
+
+.help_text {
+    text-align: center;
+    width: 539px;
+    height: 46px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    color: #292E3D;
+    margin-top: 20px;
+}
+
+.help_form {
+    display: grid;
+    grid-template-columns: 280px 280px;
+    grid-template-rows: 41px 41px;
+    column-gap: 32px;
+    row-gap: 20px;  
+    margin-top: 38px;
+    margin-bottom: 20px; 
+    justify-content: center;
+}
+
+.help_form > input {
+    width: 280px;
+    height: 41px;
+    color: #A3AAC2;
+    border-color: #E0E3EB;
+}
+input::placeholder {
+    text-align: start;
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 8px;
+}
+
+select {
+    width: 280px;
+    height: 41px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+
+    color: #A3AAC2;
+    border-color: #E0E3EB;
+}
+
+.textarea {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    width: 592px;
+    height: 135px; 
+    border-color: #E0E3EB;
+}
+
+textarea::placeholder {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    
+    color: #A3AAC2;
+    padding-top: 10px;
+    padding-left: 8px;
+}
+
+.helpForm_text {
+    margin-left: 424px;
+    margin-top: 8px;
+    display: flex;
+}
+
+.star {
+    color: red;
+}
+
+.help_subtext {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #667299;
+}
+
+.help_button {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.help_button > button {
+    width: 271px;
+    height: 53px;
+    border-radius: 2px;
+    background-color: #2947A9;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+
+    color: white;
+}
+
+#contact_us {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 85px;
+    padding-bottom: 79.5px;
+}
+
+.contact_address {
+    height: 212.5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.contact_span {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+    color: #2947A9;
+}
+
+.contactAddress_text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.contactAddress_text1,
+.contactAddress_text2,
+.contactAddress_text3 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
+    color: #292E3D;
+}
+
+.contactAddress_logo {
+    display: flex;
+    align-items: center;
+}
+
+.contactLogo_image {
+    width: 38px;
+    height: 47.5px;
+    margin-right: 14px;
+}
+
+.contactLogo_text {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+
+    color: #2947A9; 
+}
+
+.contactLinks_text {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+    color: #2947A9;
+    margin-bottom: 20px;
+}
+
+.contactLinks_input > input {
+    width: 280px;
+    height: 41px;
+    border-radius: 4px;
+    border-color: #E0E3EB;
+    margin-right: 8px;
+    margin-bottom: 42px;
+}
+
+.contactLinks_input > button {
+    width: 136px;
+    height: 41px;
+    border-radius: 4px;
+    background-color: #F9995D;
+    
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+
+    color: white;
+}
+
+.contactLinks_social {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+    color: #2947A9;
+    margin-bottom: 20px;
+}
+
+.facebook {
+    margin-right: 20px;
+}
+
+.linkedin {
+    margin-right: 20px;
+}
+
+.footer {
+    background-color: #2947A9;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.footer_text {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: white; 
+    margin-left: 116px; 
+}
