@@ -22,21 +22,11 @@
             </div>
         </div>
         <nav class="navbar">
-            <div class="navbarList_items">
-                <a href="#home">Home</a>
-            </div>
-            <div class="navbarList_items">
-                <a href="#about_us">About Us</a>
-            </div>
-            <div class="navbarList_items">
-                <a href="#projects">Projects</a>
-            </div>
-            <div class="navbarList_items">
-                <a href="#services">Services</a>
-            </div>
-            <div class="navbarList_items">
-                <a href="#contact_us">Contact Us</a>
-            </div>
+            <a class="navbarList_items" href="#home">Home</a>
+            <a class="navbarList_items" href="#about_us">About Us</a>
+            <a class="navbarList_items" href="#projects">Projects</a>
+            <a class="navbarList_items" href="#services">Services</a>
+            <a class="navbarList_items" href="#contact_us">Contact Us</a>
         </nav>
     </div>
     <div class="buildings">
@@ -58,12 +48,12 @@
                 <h4>Best Services</h4>
                 <p class="ourReputationBlock_text">Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
             </div>
-            <div class="ourReputation_block2">
+            <div class="ourReputation_block1">
                 <img src="images/micro.svg" alt="Microphone" class="micro">
                 <h4>Best Teams</h4>
                 <p class="ourReputationBlock_text">Cursus semper tellus volutpat aliquet lacus.</p>
             </div>
-            <div class="ourReputation_block3">
+            <div class="ourReputation_block1">
                 <img src="images/plane.svg" alt="Plane" class="micro">
                 <h4>Best Designs</h4>
                 <p class="ourReputationBlock_text">Ultricies at ipsum nunc, tristique nam lectus.</p>
@@ -71,16 +61,18 @@
         </div>
     </div>
     <div id="about_us">
-        <img src="images/about.png" alt="man" class="about_img">
-        <div class="aboutUs_block">
-            <h2 class="about_us">About us</h2>
-            <p class="aboutUsBlock_text">
-                For more than 30 years we have been delivering world-class construction
-                and we've built many lasting relationships along the way. <br> <br>
-                We've matured into an industry leader and trusted resource for those seeking
-                quality, innovation and reliability when building in the U.S.
-            </p>
-            <input type="image" src="images/aboutUsButton.svg" class="aboutUsBlock_button" alt="aboutUsButton">
+        <div class="aboutUs_wrap">
+            <img src="images/about.png" alt="man" class="about_img">
+            <div class="aboutUs_block">
+                <h2 class="about_us">About us</h2>
+                <p class="aboutUsBlock_text">
+                    For more than 30 years we have been delivering world-class construction
+                    and we've built many lasting relationships along the way. <br> <br>
+                    We've matured into an industry leader and trusted resource for those seeking
+                    quality, innovation and reliability when building in the U.S.
+                </p>
+                <input type="image" src="images/aboutUsButton.svg" class="aboutUsBlock_button" alt="aboutUsButton">
+            </div>
         </div>
     </div>
     <div id="services">
@@ -133,16 +125,15 @@
             </p>
             <input type="image" src="images/contact.svg" class="experience_button" alt="experience_button">
         </div>
-
     </div>
     <div class="consultation">
         <div class="consultation_block1">
             <h4 class="consultation_header">Free consultation with exceptional quality</h4>
             <p class="consultation_text">Just one call away: +84 1102 2703</p>
         </div>
-        <div class="consultation_block2">
-            <input type="image" src="images/consultation button.svg" class="consultation_button" alt="consultation_button">
-        </div>
+        <button type="button">
+            <a href="" class="consultation_button">Get your consultation</a>
+        </button>
     </div>
     <div id="projects">
         <div class="projects_content">
@@ -183,22 +174,20 @@
         </div>
         <form action="">
             <div class="help_form">
-                <input type="text" name="name" placeholder="Your Name" class="input1" alt="Your Name">
-                <input type="email" name="email" placeholder="Email" class="input2" alt="Email">
+                <input type="text" name="name" placeholder="Your Name" alt="Your Name">
+                <input type="email" name="email" placeholder="Email" alt="Email">
                 <select name="reason" id="reason">
                     <option value="" disabled selected>Reason for Contacting</option>
                     <option value="Need Help">Need Help</option>
                     <option value="Extra Information">Extra Information</option>
                     <option value="Spam">Spam</option>
                 </select>
-                <input type="tel" placeholder="Phone" class="input3">
+                <input type="tel" placeholder="Phone">
             </div>
                 <div class="textarea">
                     <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Message"></textarea>
+                    <p class="help_subtext"><span class="star">*</span> indicates a required field</p>
                 </div>
-                    <div class="helpForm_text">
-                        <p class="help_subtext"><span class="star">*</span> indicates a required field</p>
-                    </div>
                 <div class="help_button">
                     <button type="submit">Submit</button>
                 </div>
@@ -224,13 +213,21 @@
             <p class="contactLinks_text">NEWSLETTER:</p>
             <div class="contactLinks_input">
                 <input type="email" name="email" placeholder="Your email here">
-                <button type="submit">Subscribe</button>
+                <button type="button" class="contact_button">
+                    <a href="" class="contactLinks_button">Subscribe</a>
+                </button>
             </div>
             <p class="contactLinks_social">SOCIAL:</p>
             <div class="socials">
-                <img src="images/facebook.svg" alt="facebook" class="facebook">
-                <img src="images/linkedin.svg" alt="linkedin" class="linkedin">
-                <img src="images/twitter.svg" alt="twitter">
+                <a href="https://uk-ua.facebook.com/">
+                    <img src="images/facebook.svg" alt="facebook" class="facebook">
+                </a>
+                <a href="https://ua.linkedin.com/">
+                    <img src="images/linkedin.svg" alt="linkedin" class="linkedin">
+                </a>
+                <a href="https://twitter.com/?lang=ru">
+                    <img src="images/twitter.svg" alt="twitter">
+                </a>
             </div>
         </div>
     </div>

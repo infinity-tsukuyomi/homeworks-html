@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    max-width: 1440px;
+    width: 100%;
 }
 
 .header {
@@ -17,7 +17,7 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    margin-bottom: 16.5px;
+    margin-bottom: 16px;
 }
 
 .header_logo {
@@ -30,7 +30,7 @@ body {
 
 .headerLogo_image {
     width: 38px;
-    height: 47.5px;
+    height: 47px;
 
     margin-right: 14px;
 }
@@ -59,7 +59,12 @@ body {
 .navbarList_items {
     font-family: "Work Sans", sans-serif;
     font-weight: 400;
-    font-size: 18px;    
+    font-size: 18px;
+    color: #14171F;
+}
+
+.navbarList_items:hover {
+    color: #F9995D;
 }
 
 a {
@@ -150,10 +155,8 @@ h1 {
     margin-top: 50px;
 }
 
-.ourReputation_block1,
-.ourReputation_block2,
-.ourReputation_block3 {
-    border: 1.4px solid #E0E3EB;
+.ourReputation_block1 {
+    border: 1px solid #E0E3EB;
     width: 292px;
     height: 197px;
 }
@@ -191,6 +194,11 @@ h4 {
     position: relative;
 }
 
+.aboutUs_wrap {
+    display: flex;
+    justify-content: center;
+}
+
 .aboutUs_block {
     width: 488px;
     height: 523px;
@@ -198,7 +206,7 @@ h4 {
 
     position: absolute;
     top: 147px;
-    right: 112px;
+    left: 840px;
 }
 
 .about_us {
@@ -214,8 +222,9 @@ h4 {
 .about_img {
     width: 902px;
     height: 669px;
-    margin-top: 74px;
-    margin-left: 114px;
+    position: absolute;
+    top: 74px;
+    left: 114px;
 }
 
 .aboutUsBlock_text {
@@ -238,6 +247,8 @@ h4 {
 #services {
     height: 608px;
     background: #F6F8F7;
+    display: flex;
+    flex-direction: column;
 }
 
 .services_header {
@@ -252,9 +263,9 @@ h4 {
 
 .services_blocks {
     height: 410px;
-    margin-left: 216px;
     margin-top: 30px;
     display: grid;
+    justify-content: center;
     justify-items: center;
     grid-template-columns: 271px 271px 270px;
     grid-template-rows: 181px 181px;
@@ -294,6 +305,7 @@ h4 {
     top: 122px;
     left: 512px;
     z-index: 1;
+    background-color: white;
 
     border: 1px solid white;
     box-shadow: 0 4px 6px -2px rgba(17, 24, 39, 0.05),
@@ -312,6 +324,7 @@ h4 {
     position: absolute;
     top: 221px;
     left: 212px;
+    background-color: white;
 
     border: 1px solid white;
     box-shadow: 0 4px 6px -2px rgba(17, 24, 39, 0.05),
@@ -331,6 +344,7 @@ h4 {
     top: 364px;
     left: 458px;
     z-index: 1;
+    background-color: white;
 
     border: 1px solid white;
     box-shadow: 0 4px 6px -2px rgba(17, 24, 39, 0.05),
@@ -349,6 +363,7 @@ h4 {
     position: absolute;
     top: 469px;
     left: 261px;
+    background-color: white;
 
     border: 1px solid white;
     box-shadow: 0 4px 6px -2px rgba(17, 24, 39, 0.05),
@@ -399,11 +414,6 @@ h4 {
     background: url(images/unsplash_MP0bgaS_d1c.png) no-repeat center/cover;
     display: flex;
     justify-content: space-around;
-
-}
-
-.consultation_block2 {
-    display: flex;
     align-items: center;
 }
 
@@ -413,7 +423,6 @@ h4 {
     font-weight: 700;
 
     color: #ffffff;
-    margin-top: 100px;  
 }
 
 .consultation_text {
@@ -426,14 +435,24 @@ h4 {
     margin-left: 15px;
 }
 
-.consultation_button {
+.consultation > button {
     width: 232px;
     height: 53px;
+    border-color: white;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.consultation_button {
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .projects_content {
-    display: grid;
-    grid-template-columns: 35% 65%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 112px;
 }
 
 .projects_header {
@@ -558,15 +577,19 @@ h4 {
 .help_form > input {
     width: 280px;
     height: 41px;
-    color: #A3AAC2;
-    border-color: #E0E3EB;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 8px;
+    border: 1px solid #E0E3EB;
+    border-radius: 4px;
 }
 input::placeholder {
     text-align: start;
     font-family: "Work Sans", sans-serif;
     font-size: 18px;
     font-weight: 400;
-    padding-left: 8px;
+    color: #A3AAC2;
 }
 
 select {
@@ -575,20 +598,28 @@ select {
     font-family: "Work Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
-
-    color: #A3AAC2;
-    border-color: #E0E3EB;
+    border: 1px solid #E0E3EB;
+    border-radius: 4px;
 }
 
 .textarea {
-    display: flex;
+    display: grid;
     justify-content: center;
+    row-gap: 8px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 textarea {
     width: 592px;
     height: 135px; 
     border-color: #E0E3EB;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    padding-left: 8px;
+    padding-top: 10px;
 }
 
 textarea::placeholder {
@@ -597,14 +628,6 @@ textarea::placeholder {
     font-size: 18px;
     
     color: #A3AAC2;
-    padding-top: 10px;
-    padding-left: 8px;
-}
-
-.helpForm_text {
-    margin-left: 424px;
-    margin-top: 8px;
-    display: flex;
 }
 
 .star {
@@ -629,6 +652,7 @@ textarea::placeholder {
     width: 271px;
     height: 53px;
     border-radius: 2px;
+    border: none;
     background-color: #2947A9;
     font-family: "Work Sans", sans-serif;
     font-weight: 600;
@@ -641,11 +665,11 @@ textarea::placeholder {
     display: flex;
     justify-content: space-around;
     padding-top: 85px;
-    padding-bottom: 79.5px;
+    padding-bottom: 79px;
 }
 
 .contact_address {
-    height: 212.5px;
+    height: 212px;
     display: flex;
     flex-direction: column;
     row-gap: 32px;
@@ -682,7 +706,7 @@ textarea::placeholder {
 
 .contactLogo_image {
     width: 38px;
-    height: 47.5px;
+    height: 47px;
     margin-right: 14px;
 }
 
@@ -706,18 +730,31 @@ textarea::placeholder {
 .contactLinks_input > input {
     width: 280px;
     height: 41px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
     border-radius: 4px;
-    border-color: #E0E3EB;
-    margin-right: 8px;
-    margin-bottom: 42px;
+    border: 1px solid #E0E3EB;
+    padding-left: 8px;
 }
 
-.contactLinks_input > button {
+input::placeholder {
+    text-align: start;
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #A3AAC2;
+}
+
+.contact_button {
     width: 136px;
     height: 41px;
     border-radius: 4px;
+    border: none;
     background-color: #F9995D;
-    
+}
+
+.contactLinks_button {
     font-family: "Work Sans", sans-serif;
     font-weight: 600;
     font-size: 18px;
@@ -731,6 +768,7 @@ textarea::placeholder {
     font-size: 20px;
 
     color: #2947A9;
+    margin-top: 42px;
     margin-bottom: 20px;
 }
 
