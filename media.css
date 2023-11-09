@@ -1,13 +1,14 @@
 @media screen and (max-width: 1024px) {
-    body {
-        width: 1024px;
-    }
 
     .categories_block {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 49px;
+    }
+
+    .categories_item1 {
+        margin-bottom: 0;
     }
 
     .categories_item2 {
@@ -23,9 +24,21 @@
     }
 
     .bestsellers_blocks {
-        display: flex;
+        display: grid;
+        grid-template-columns: 387px 387px;
+        column-gap: 20px;
+        row-gap: 20px;
         justify-content: center;
-        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .bestsellersBlocks_item2 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .bestsellers_header > a {
+        display: none;
     }
 
     .design {
@@ -75,26 +88,209 @@
 }
 
 @media screen and (max-width: 430px) {
-    body {
-        width: 430px;
-    }
-
     nav {
         display: none;
     }
 
-    .burger {
-        display: block;
-    }
-
     .header {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+    }
+
+    .burger {
+        display: block;
+        margin-left: 193px;
     }
 
     #home {
         height: 553px;
+        padding-top: 0;
+        margin-top: 77px;
+        background: url(img/IntroBackground.png) 0px -30px no-repeat;
+    }
+
+    .home_wrap {
+        margin-top: 60px;
+    }
+
+    .home_text > p {
+        width: 389px;
+    }
+
+    .categories_text {
+        width: 230px;
+        margin-bottom: 30px;
+    }
+
+    .categories_item1,
+    .categories_item2,
+    .categories_item3,
+    .categories_item4 {
+        padding-top: 114px;
+    }
+
+    .categories_item1 {
+        margin: 0;
+        width: 394px;
+        background: url(img/categoryimage1.png) 49px no-repeat, 
+        url(img/Rectangle_1.jpg), no-repeat;
+    }
+
+    .categories_item3 {
+        display: none;
+    }
+
+    .categories_item4 {
+        width: 394px;
+        background: url(img/categoryimage4.png) 98px 20px no-repeat,
+        url(img/Rectangle_1.jpg) no-repeat;
+    }
+
+    .bestsellers {
+        margin-top: 70px;
+        padding-left: 21px;
+    }
+
+    .bestsellers_header {
+        width: 389px;
+    }
+
+    .bestsellers_header > a {
+        display: block;
+        margin-left: 83px;
+        width: 141px;
+    }
+
+    .bestsellers_blocks {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .bestsellersBlocksItem_header,
+    .bestsellersBlocksItem_text,
+    .bestsellersBlocksItem_price {
+        text-align: center;
+    }
+
+    .design_image {
+        width: 381px;
+    }
+
+    .design_image > img {
+        width: 381px;   
+    }
+
+    .design_block {
+        width: 384px;
         display: flex;
         justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .designBlock_header,
+    .designBlock_text {
+        text-align: center;
+    }
+
+    .featured_products {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .featuredProductsHeader_text {
+        font-size: var(--fs24);
+    }
+
+    .featuredProductsBlock1_image {
+        width: 392px;
+        height: 258px;
+        margin-left: 15px;
+    }
+
+    .featuredProducts_block2 {
+        display: flex;
+        flex-direction: column;    
+    }
+
+    .featuredProductsBlock2_item > img,
+    .featuredProductsBlock2_item4 > img {
+        margin-bottom: 11px;
+    }
+    
+    .featuredProductsBlock2_item,
+    .featuredProductsBlock2_item4 {
+        text-align: center;
+    }
+
+    .featuredProductsBlock2Item_text {
+        width: 285px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .perks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .perks_item {
+        margin-bottom: 71px;
+    }
+
+    .contact_wrap {
+        width: 388px;   
+    }
+
+    .contact_text > p {
+        width: 365px;
+        font-size: 14px;
+    }
+
+    .contact_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact_form > input {
+        width: 322px;
+        height: 53px;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .contactFormButton {
+        width: 176px;
+    }
+
+    .about_wrap {
+        padding-top: 12px;
+        padding-left: 12px;
+        padding-right: 12px;
+        width: 390px;   
+        height: 87px;
+    }
+
+    .about_text {
+        font-size: var(--fs20);
+    }
+
+    .about_links {
+        width: 174px;
+        height: 30px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .about_links img {
+        width: 30px;
+        height: 30px;
     }
 }
